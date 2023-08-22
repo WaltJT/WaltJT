@@ -1,0 +1,32 @@
+program Tp0_1;
+var
+     a,b,c,p  :real;
+     edad     :integer;
+     nombre   :string;
+     pausa    :string;
+
+begin
+     writeln('Tp 01 ingrese su nombre: ');
+     read(nombre);
+     write('. Gracias!');
+
+     writeln('');
+     writeln('---------------------------------');
+     writeln('Tp 01 ingrese su edad: ');
+     readln(edad);
+
+     writeln('');
+     writeln('Ingrese 3 notas separadas en distintos renglones:');
+     readln(a);
+     readln(b);
+     readln(c);
+
+
+     p:=(a+b+c)/3;
+     writeln('');
+     writeln(nombre, ' el promedio es', p);
+
+     writeln('Presione ENTER para terminar');
+     readln(pausa)
+
+end.

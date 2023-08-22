@@ -1,0 +1,32 @@
+program TPejemplo;
+
+uses 
+   Crt;                                             {para declarar que utilizaremos el monitor, se puede omitir}
+
+Var                                                   {para declarar variables}
+                                                                      
+   NE: string;                                                           {variable NE= NOMBRE EMPLEADO tipo texto}
+   SE: real;                                                             {variable SE= SUELDO EMPLEADO tipo real}
+   JE: real;                                                             {variable JE= Jubilación EMPLEADO tipo real}
+
+begin
+   ClrScr;                                                            {para limpiar/borrar la pantalla, a veces no funciona}
+   Write( 'Algoritmo y Programación - Ejemplo básico Pascal' );       {para mostrar en pantalla}
+   Writeln( '------------------------------------------------' );     {para mostrar guiones en la línea siguiente}
+   Writeln( ' ' );                                                    {para dejar un renglón en blanco}
+
+   writeln('Por favor ingrese nombre del empleado');
+   readln(NE);
+
+   writeln( ' ' );
+   writeln('ingrese el sueldo');
+   readln(SE);
+
+   JE:=SE * 16 / 100;                                                 {para realizar un cálculo}
+   writeln( ' ' );
+   writeln( 'El empleado ',NE, 'tiene un sueldo de ', SE );
+   writeln( 'y la jubilacion es de ', JE:5:2);
+
+   readkey
+ 
+end.

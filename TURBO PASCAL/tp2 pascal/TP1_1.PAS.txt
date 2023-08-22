@@ -1,0 +1,42 @@
+program TP1_1;
+uses
+   Crt;
+
+Var
+   J: integer;                                                         {variable Contador tipo entero}
+   I: real;                                                            {variable I= IMPORTE tipo real}
+   S: real;                                                            {variable S= SUMATORIA tipo real}
+
+begin
+   ClrScr;
+   Write( 'Algoritmo y Programación - Ciclos' );
+   Writeln( '---------------------------------');
+   writeln(' ');
+
+   writeln(' Mostrar los numeros del 1 al 10 en una linea...');
+   for J:=1 to 10 do
+     write(J,',');
+
+
+   writeln(' ');
+   writeln(' ');
+   writeln(' Mostrar los numeros del 1 al 10 en orden descendente...');
+
+   for J:=10 downto 1 do
+     writeln(J);
+
+
+   writeln(' ');
+   writeln(' ');
+   writeln(' Aceptar 3 importes y mostar la sumatoria...');
+   for J:=1 to 3 do
+     begin
+     writeln('Ingrese un numero: ');
+     read(i);
+     s:=s+i;
+     end;
+   writeln('la sumatoria de los importes es: ',S:12:2);
+
+   readkey
+
+end.
